@@ -37,19 +37,41 @@
       border-radius: 6px;
       border: 1px solid #333;
     }
+    .era {
+      position: relative;
+      margin: 3rem 0;
+      text-align: center;
+      font-weight: bold;
+      color: #ffcc00;
+    }
+    .era::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      border-top: 2px dashed #444;
+      z-index: -1;
+    }
+    .era span {
+      background-color: #111;
+      padding: 0 1rem;
+    }
   </style>
 </head>
 <body>
   <h1>Календарь Вех Комьюнити</h1>
 
+  <div class="era"><span>Дискорд эпоха</span></div>
   <div class="event">
     <div class="date">6 августа 2019</div>
-    <div class="description">Рождение комьюнити (дискорд эпоха)</div>
+    <div class="description">Рождение комьюнити</div>
   </div>
 
+  <div class="era"><span>Телеграм эпоха</span></div>
   <div class="event">
     <div class="date">1 ноября 2024</div>
-    <div class="description">Переезд в телеграм из-за блокировок в России (телеграм эпоха)</div>
+    <div class="description">Переезд в телеграм из-за блокировок в России</div>
   </div>
 
   <div class="event">
@@ -62,6 +84,8 @@
     <div class="description">Встреча с Mario и убийство дракона</div>
 <!--     <img src="images/dragon_slay.png" alt="Скрин убийства дракона"> -->
   </div>
+
+  <div class="era"><span>Эпоха РАЗДОРА</span></div>
 
   <div class="event">
     <div class="date">14 июня 2025</div>
